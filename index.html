@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Erick Will — independent developer</title>
+  <meta name="description" content="Personal site of Erick Will, independent developer and maker of UCrypt, a password manager that keeps your secrets on your own device.">
+  <link rel="canonical" href="https://erickwill.github.io/">
+  <style>
+    /* Erick Will — root page. Same palette as the UCrypt site, no frameworks. */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #0f1218;
+      --surface: #171b24;
+      --line: #262c38;
+      --text: #dfe3ea;
+      --muted: #9aa3b2;
+      --accent: #3ecf8e;
+      --accent-dim: #2aa06d;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.65;
+      font-size: 17px;
+      display: flex;
+      min-height: 100vh;
+      flex-direction: column;
+    }
+
+    main {
+      max-width: 720px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 56px 24px 80px;
+      flex: 1;
+    }
+
+    h1 { font-size: 2rem; line-height: 1.25; margin: 0 0 8px; letter-spacing: -0.02em; }
+    h2 { font-size: 1.35rem; margin: 40px 0 12px; }
+
+    p { margin: 0 0 16px; }
+    .muted { color: var(--muted); }
+    .small { font-size: 0.9rem; }
+
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    header.site { border-bottom: 1px solid var(--line); }
+    .site-inner {
+      max-width: 720px; margin: 0 auto; padding: 16px 24px;
+      display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap;
+    }
+    .wordmark { font-weight: 700; font-size: 1.15rem; letter-spacing: 0.02em; }
+    .wordmark span { color: var(--accent); }
+    nav.site a { color: var(--muted); margin-left: 16px; font-size: 0.95rem; }
+    nav.site a:hover { color: var(--accent); text-decoration: none; }
+
+    .tagline { color: var(--muted); font-size: 1.05rem; margin-bottom: 28px; }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 24px;
+      margin: 16px 0 8px;
+    }
+    .card h3 { font-size: 1.2rem; margin-bottom: 8px; }
+    .card p { color: var(--muted); margin-bottom: 12px; }
+
+    .button {
+      display: inline-block;
+      background: var(--accent);
+      color: #08110c;
+      font-weight: 600;
+      padding: 12px 22px;
+      border-radius: 10px;
+      margin: 4px 0 12px;
+    }
+    .button:hover { background: var(--accent-dim); text-decoration: none; }
+
+    footer.site { border-top: 1px solid var(--line); margin-top: 40px; }
+    footer.site .site-inner { justify-content: flex-start; }
+    footer.site a { color: var(--muted); margin-right: 20px; font-size: 0.92rem; }
+    footer.site .copy { color: var(--muted); font-size: 0.92rem; margin-right: 20px; }
+  </style>
+</head>
+<body>
+
+<header class="site">
+  <div class="site-inner">
+    <div class="wordmark">Erick <span>Will</span></div>
+    <nav class="site">
+      <a href="https://erickwill.github.io/UCrypt/">UCrypt</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <h1>Hi, I'm Erick Will.</h1>
+  <p class="tagline">Independent developer. I build everything from small tools to sophisticated
+  systems — software that runs on your machine, made to help people and make things better
+  for everyone.</p>
+
+  <p>This is my little corner of the web. I keep it simple on purpose: a place to describe what
+  I make, how to reach me, and where to find the fine print.</p>
+
+  <h2>What I'm working on now</h2>
+  <div class="card">
+    <h3>UCrypt</h3>
+    <p>A password manager for Chromium browsers that keeps your vault on your own device,
+    encrypted with your own key. No accounts, no tracking. If you want a backup, it goes to
+    your own Google Drive — encrypted before it ever leaves your machine.</p>
+    <a class="button" href="https://erickwill.github.io/UCrypt/">Visit the UCrypt site</a>
+    <p class="small">Free to use for personal, non-commercial purposes.</p>
+    <p class="small muted">Built for Brave, Edge, Helium and other Chromium browsers. Works in Chrome too.</p>
+    <p class="small muted">Also on the Chrome Web Store.</p>
+    <!-- TODO: paste your Chrome Web Store link in the href below, then save -->
+    <p class="small"><a href="#">Chrome Web Store link</a></p>
+  </div>
+
+  <h2 id="contact">Contact</h2>
+  <p>The quickest way to reach me is email:
+  <a href="mailto:erickwill@gmail.com">erickwill@gmail.com</a></p>
+  <p class="muted">If it's about UCrypt — a bug, a question about your vault, or anything privacy
+  related — email works best. Write down your recovery words before you write to me, though.
+  That's the one thing nobody can fix for you later.</p>
+</main>
+
+<footer class="site">
+  <div class="site-inner">
+    <span class="copy">&copy; 2026 Erick Will</span>
+    <a href="https://erickwill.github.io/UCrypt/privacy.html">Privacy policy</a>
+    <a href="https://erickwill.github.io/UCrypt/terms.html">Terms of service</a>
+    <a href="https://github.com/erickwill">GitHub</a>
+  </div>
+</footer>
+
+</body>
+</html>
